@@ -1,0 +1,93 @@
+.header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/background1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom;
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bookmark {
+        margin: 0 auto;
+        background-color: $c-button-label;
+        width: 200px;
+        padding: 10px 20px 20px;
+        font-family: $f-logo;
+        text-align: center;
+        color: $c-highlighted-text;
+        border-radius: 0 0 30px 30px;
+
+        h2 {
+            font-size: 32px;
+            letter-spacing: 4px;
+        }
+        span {
+            font-family: $f-logo2;
+            letter-spacing: 7px;
+            font-size: 12px;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        margin-top: 50px;
+
+        a {
+            color: #fff;
+            font-family: $f-headers;
+            font-weight: bold;
+            font-size: 24px;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+    }
+
+    h1 {
+        margin-left: 280px;
+        margin-top: 200px;
+        font-family: $f-headers;
+        color: #fff;
+        font-size: 150px;
+        letter-spacing: 10px;
+        span {
+            display: block;
+            font-size: 70px;
+        }
+    }
+
+    .btn-reservation {
+        width: 270px;
+        height: 60px;
+        display: block;
+        margin: 120px auto;
+        background-color: $c-button-label;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        
+        &:hover{
+            cursor: pointer;
+        }
+
+        img {
+            margin-left: 15px;
+        }
+
+        span {
+            margin-left: 10px;
+            font-family: $f-text;
+            font-weight: bold;
+            color: #fff;
+            font-size: 24px
+        }
+
+    }
+}
+

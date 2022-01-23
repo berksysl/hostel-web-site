@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@400;700&family=PT+Serif&display=swap");
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./images/background1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.header .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.header .bookmark {
+  margin: 0 auto;
+  background-color: #E0B973;
+  width: 200px;
+  padding: 10px 20px 20px;
+  font-family: "PT Serif", serif;
+  text-align: center;
+  color: #14274A;
+  border-radius: 0 0 30px 30px;
+}
+
+.header .bookmark h2 {
+  font-size: 32px;
+  letter-spacing: 4px;
+}
+
+.header .bookmark span {
+  font-family: "Abhaya Libre", serif;
+  letter-spacing: 7px;
+  font-size: 12px;
+}
+
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.header .navbar a {
+  color: #fff;
+  font-family: "Abel", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.header h1 {
+  margin-left: 280px;
+  margin-top: 200px;
+  font-family: "Abel", sans-serif;
+  color: #fff;
+  font-size: 150px;
+  letter-spacing: 10px;
+}
+
+.header h1 span {
+  display: block;
+  font-size: 70px;
+}
+
+.header .btn-reservation {
+  width: 270px;
+  height: 60px;
+  display: block;
+  margin: 120px auto;
+  background-color: #E0B973;
+  border: none;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .btn-reservation:hover {
+  cursor: pointer;
+}
+
+.header .btn-reservation img {
+  margin-left: 15px;
+}
+
+.header .btn-reservation span {
+  margin-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 24px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*# sourceMappingURL=style.css.map */
