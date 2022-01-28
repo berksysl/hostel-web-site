@@ -1,0 +1,119 @@
+.footerhead {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    h3 {
+        text-align: center;
+        font-family: $f-headers;
+        font-size: 36px;
+    }
+    h4 {
+        font-family: $f-text;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    p {
+        text-align: center;
+        font-family: $f-text;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+
+footer {
+    background-color: $c-highlighted-text;
+    width: 100%;
+    display: grid;
+    padding: 20px 40px;
+    grid-template-areas: 'area1 area2 area3 area4';
+    color: white;
+    text-align: center;
+    font-family: $f-headers;
+
+    .col1 {
+        grid-area: area1;
+        width: fit-content;
+        margin: 0 auto;
+        .logo {
+            h4 {
+                letter-spacing: 3px;
+                font-size: 22px;
+            }
+            p {
+                font-size: 10px;
+                letter-spacing: 5px;
+            }
+        }
+
+        .address {
+            text-align: start;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    }
+    .col2 {
+        grid-area: area2;
+        .list {
+            margin: 0;
+            font-size: 13px;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+    }
+    .col3 {
+        grid-area: area3;
+        text-align: start;
+        .list {
+            margin: 0;
+            font-size: 15px;
+            img {
+                width: 15px;
+            }
+           
+            a {
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .col4 {
+        grid-area: area4;
+        text-align: start;
+        input {
+            border: 3px solid #E0B973;
+            margin:-4px;
+            margin-top: 10px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        input[type=text] {
+            width: 150px;
+            height: 20px;
+            background-color: $c-highlighted-text;
+            color: white;
+        }
+
+        input[type=text]::placeholder {
+            color: white;
+            font-family: $f-text;
+        }
+
+        input[type=submit] {
+            background-color: #E0B973;
+            font-family: $f-text;
+            font-weight: bold;
+            color: $c-highlighted-text;
+            margin:0;
+            height: 28px;
+        }
+    }
+}

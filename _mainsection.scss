@@ -111,4 +111,25 @@
     line-height: 1.4;
 }
 
+.placetovisit {
+    margin-top: 100px;
+    margin-left: 15%;
+    font-family: $f-headers;
+    font-size: 36px;
+}
 
+ul {
+    margin-left: 15%;
+    margin-top: 30px;
+
+    li {
+        font-family: $f-text;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        img {
+            width: 30px;
+            margin-right: 10px;
+        }
+    }
+}

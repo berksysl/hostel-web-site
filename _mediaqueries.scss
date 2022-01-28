@@ -1,0 +1,126 @@
+@media screen and (max-width: 1132px) {
+    .header {
+        width: 100vw;
+        background-position-x: -884px;
+    }
+    
+    .header .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .navbar {
+        flex-direction: column;
+        text-align: center;
+        
+        li {
+            margin-bottom: 25px;
+        }
+    }
+
+    .header h1 {
+        margin-top: 100px;
+        margin-left: 50px;
+        font-size: 70px;
+    }
+
+    .header h1 span {
+        font-size: 40px;
+    }
+
+    .header .btn-reservation {
+        width: 212px;
+        height: 45px;
+    }
+
+    .header .btn-reservation span {
+        font-size: 17px;
+    }
+
+    // mainsection
+
+    .secrooms {
+        flex-direction: column-reverse;
+        &::before {
+            display: none;
+        }
+
+        .photo {
+            width: 95%;
+            margin: 0 auto;
+        }
+        .photo img {
+            width: 100%;
+        }
+
+        .info {
+            width:95%;
+            margin: 20px auto;
+        }
+        .info .title{
+            font-size: 34px;
+        }
+    }
+
+    .seclocation {
+        flex-direction: column-reverse;
+        &::before {
+            display: none;
+        }
+
+        .photo {
+            width: 95%;
+            margin: 0 auto;
+        }
+        .photo img {
+            width: 100%;
+        }
+
+        .info {
+            width:95%;
+            margin: 20px auto;
+        }
+        .info .title{
+            font-size: 34px;
+        }
+    }
+
+    .sec {
+        flex-direction: column;
+        
+        .note {
+            width: 95%;
+            margin: 10px 0;
+            text-align: center;
+        }
+    }
+
+    .footerhead {
+        h3 {
+            font-size: 27px;
+        }
+        h4 {
+            font-size: 17px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+
+        .col1 {
+            margin: 0;
+
+            .address {
+                margin-top: 33px;
+            }
+        }
+
+        div {
+            margin-top: 20px;
+        }
+    }
+}
