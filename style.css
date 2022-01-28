@@ -1,4 +1,58 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@400;700&family=PT+Serif&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .header {
   width: 100vw;
   height: 100vh;
@@ -71,6 +125,10 @@
   font-size: 70px;
 }
 
+.header a {
+  text-decoration: none;
+}
+
 .header .btn-reservation {
   width: 270px;
   height: 60px;
@@ -85,6 +143,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
 }
 
 .header .btn-reservation:hover {
@@ -103,57 +162,124 @@
   font-size: 24px;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+.mainText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #14274A;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+.secrooms, .seclocation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 70px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secrooms::before {
+  content: ' ';
+  height: 300px;
+  width: 2px;
+  background-color: black;
+  position: relative;
+  top: -10px;
+  left: -40px;
+}
+
+.seclocation::before {
+  content: ' ';
+  height: 300px;
+  width: 2px;
+  background-color: black;
+  position: relative;
+  top: -10px;
+  left: -40px;
+}
+
+.info {
+  max-width: 500px;
+  color: #14274A;
+  font-family: "Abel", sans-serif;
+}
+
+.info .title {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.info .subtext {
+  margin-top: 15px;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.info a {
+  text-decoration: none;
+}
+
+.info .btn-reservation {
+  width: 170px;
+  height: 45px;
   display: block;
+  margin: 20px 0;
+  background-color: #E0B973;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: bold;
 }
 
-body {
-  line-height: 1;
+.info .btn-reservation:hover {
+  cursor: pointer;
 }
 
-ol, ul {
-  list-style: none;
+.infoSection {
+  max-width: 80%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
-blockquote, q {
-  quotes: none;
+.sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+.label {
+  font-family: "Abel", sans-serif;
+  padding: 10px 30px;
+  background-color: #E0B973;
+  display: inline-block;
+  font-size: 42px;
+  color: white;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.note {
+  max-width: 900px;
+  margin-left: 30px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.4;
 }
 /*# sourceMappingURL=style.css.map */

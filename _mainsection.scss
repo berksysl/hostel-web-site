@@ -1,0 +1,114 @@
+.mainText {
+    font-family: $f-text;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: $c-highlighted-text;
+}
+
+.secrooms, .seclocation {
+    
+    display: flex;
+    justify-content: center;
+    margin: 70px auto;
+    align-items: center;
+}
+
+.secrooms::before {
+    content: ' ';
+    height: 300px;
+    width: 2px;
+    background-color: black;
+    position: relative;
+    top: -10px; 
+    left: -40px;
+}
+
+.seclocation::before {
+    content: ' ';
+    height: 300px;
+    width: 2px;
+    background-color: black;
+    position: relative;
+    top: -10px; 
+    left: -40px;
+}
+
+.info {
+    max-width: 500px;
+    color: $c-highlighted-text;
+    font-family: $f-headers;
+
+    .title {
+        font-size: 46px;
+        font-weight: bold;
+
+    }
+
+    .subtext {
+        margin-top: 15px;
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .btn-reservation {
+        width: 170px;
+        height: 45px;
+        display: block;
+        margin: 20px 0;
+        background-color: $c-button-label;
+        border: none;
+        border-radius: 10px;
+        &:hover{
+            cursor: pointer;
+        }
+        font-size: 18px;
+        font-family: $f-text;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+.infoSection {
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: $f-text;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.sec {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.label {
+    font-family: $f-headers;
+    padding: 10px 30px;
+    background-color: $c-button-label;
+    display: inline-block;
+    font-size: 42px;
+    color: white;
+}
+
+.note {
+    max-width: 900px;
+    margin-left: 30px;
+    font-family: $f-text;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+

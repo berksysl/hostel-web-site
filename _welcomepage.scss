@@ -61,6 +61,10 @@
         }
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .btn-reservation {
         width: 270px;
         height: 60px;
@@ -71,7 +75,7 @@
         border-radius: 10px;
         display: flex;
         align-items: center;
-        
+        text-decoration: none;
         &:hover{
             cursor: pointer;
         }
